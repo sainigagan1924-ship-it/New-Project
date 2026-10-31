@@ -1,0 +1,17 @@
+{
+  "name": "studytube",
+  "version": "1.0.0",
+  "description": "StudyTube - AI-Powered Video Recommendation Platform",
+  "main": "server/src/server.js",
+  "scripts": {
+    "start": "node server/src/server.js",
+    "server": "node server/src/server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
